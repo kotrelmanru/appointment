@@ -38,20 +38,6 @@ VITE_API_BASE_URL=http://localhost:8000/api/v1
 Jalankan aplikasi frontend:
 npm run dev
 
-
-Struktur Proyek
-appointment-ms/
-├── backend/               # Server Node.js
-│   ├── controllers/       # Logika bisnis
-│   ├── models/            # Skema MongoDB
-│   ├── routes/            # Endpoint API
-│   ├── server.js          # Entry point server
-│   └── package.json       # Dependencies backend
-└── frontend/              # Aplikasi Next.js
-    ├── src/               # Kode sumber frontend
-    ├── public/            # Aset statis
-    └── package.json       # Dependencies frontend
-
     
 **Penggunaan**
 Buka browser dan akses http://localhost:3000
@@ -71,28 +57,15 @@ POST /api/v1/appointments - Buat janji temu baru
 
 PUT/DELETE /api/v1/appointments/:id - Update/hapus janji temu
 
-Teknologi yang Digunakan
+Dependencies yang Wajib Diinstal terlebih dahulu
 Frontend:
-
-Next.js
-
-React.js
-
-Tailwind CSS
-
-Axios
 
 Moment.js (timezone)
 
 SweetAlert2
 
+
 Backend:
-
-Node.js
-
-Express.js
-
-MongoDB (Mongoose)
 
 JWT (autentikasi)
 
