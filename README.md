@@ -72,5 +72,51 @@ JWT (autentikasi)
 Moment-timezone
 
 
+
+Project Implementation
+1. Authentication
+• Login: Implement simple login using only the username.
+• Authentication Method: Use JWT or session-based authentication.
+• Session Expiry: Sessions should expire after 1 hour.
+<img width="1428" alt="Jepretan Layar 2025-05-05 pukul 23 27 57" src="https://github.com/user-attachments/assets/6b2cb854-8140-4424-8198-14f3e7c6bd40" />
+
+2. User Management
+• User Model: Implement a User model with the following attributes:
+• id (UUID or auto-increment)
+• name (String)
+• username (String, unique)
+• preferred_timezone (e.g., Asia/Jakarta, Pacific/Auckland)
+• Database: Use a relational database (PostgreSQL/MySQL) or NoSQL (MongoDB).
+• API Endpoint: Provide an API endpoint to fetch user data.
+<img width="833" alt="Jepretan Layar 2025-05-05 pukul 23 31 53" src="https://github.com/user-attachments/assets/f08398c7-c585-4252-aec6-4d83470b4a3b" />
+
+3. Appointment System
+• Appointment Model: Implement an Appointment model with:
+• id (UUID or auto-increment)
+• title (String)
+• creator_id (User relationship)
+• start (Datetime)
+• end (Datetime)
+• User Actions: Users should be able to:
+• Create appointments and invite other users.
+• View a list of their upcoming appointments.
+<img width="1267" alt="Jepretan Layar 2025-05-05 pukul 23 33 17" src="https://github.com/user-attachments/assets/eae8b215-6e35-49db-b8cc-23713084fc02" />
+<img width="466" alt="Jepretan Layar 2025-05-05 pukul 23 33 58" src="https://github.com/user-attachments/assets/0e3846c0-80bd-4b6a-81ad-a67c6485e898" />
+
+4. Timezone Handling
+• Scheduling: Ensure the time falls within working hours (08:00 - 17:00) of all participants.
+• Display: Adjust times according to the logged-in user's preferred timezone.
+<img width="326" alt="Jepretan Layar 2025-05-05 pukul 23 35 02" src="https://github.com/user-attachments/assets/bac4c0f3-db17-435a-b485-77afbc7fd985" />
+<img width="451" alt="Jepretan Layar 2025-05-05 pukul 23 36 33" src="https://github.com/user-attachments/assets/6952979e-36af-4339-9bc4-bbe9805ca4e6" />
+
+5. User Interface
+• Login Page: Minimalistic design for user login.
+• Appointment List Page: Display a list of upcoming appointments.
+• Appointment Creation Form: Form for creating new appointments.
+<img width="974" alt="Jepretan Layar 2025-05-05 pukul 23 38 27" src="https://github.com/user-attachments/assets/bd58d773-d44f-4c23-990a-3a8652ad6bef" />
+<img width="1267" alt="Jepretan Layar 2025-05-05 pukul 23 33 17" src="https://github.com/user-attachments/assets/249e9f3a-a983-4548-b2cb-33f9efd0792a" />
+<img width="466" alt="Jepretan Layar 2025-05-05 pukul 23 33 58" src="https://github.com/user-attachments/assets/2d7d8c52-8e2b-45ac-8b57-81993a6fe08f" />
+
+
 Lisensi
 MIT
