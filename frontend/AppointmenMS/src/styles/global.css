@@ -1,0 +1,16 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Cyberpunk theme
+:root {
+  --bg-dark: #0d0d0d;
+  --text-neon: #39ff14;
+  --accent-pink: #ff0099;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-neon);
+  font-family: 'Inter', sans-serif;
+} */
